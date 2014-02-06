@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Kill ie6</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #555555;
+            font-family: "宋体", "Arial Narrow";
+            font-size: 12px;
+            height: auto;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            width: 100%;
+            background-color:#0a5998;
+        }
+
+        .ie6_div {
+            background-color: #fff;
+            height: 270px;
+            left: 30%;
+            opacity: 1;
+            overflow: hidden;
+            position: absolute;
+            top: 25%;
+            width: 620px;
+            z-index: 1200;
+        }
+
+        .ie6_main {
+            background-color: #F8F8EB;
+            float: left;
+            font-family: '微软雅黑', Arial, '宋体', sans-serif;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            overflow: auto;
+            width: 585px;
+        }
+
+        .ie6_head {
+            height: 36px;
+            width: 580px;
+        }
+
+        .ie6_btn {
+            background: url("http://www.workingim.com/assest/images/close.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+            cursor: pointer;
+            display: inline;
+            height: 24px;
+            left: 595px;
+            position: absolute;
+            width: 24px;
+            z-index: 999999;
+        }
+
+        .ie6_font {
+            color: #333333;
+            float: left;
+            font-size: 20px;
+            height: 36px;
+            line-height: 36px;
+            margin-left: 16px;
+            width: 300px;
+        }
+
+        .ie_con {
+            background-color: #F2DEDE;
+            border: 1px solid #912515;
+            float: left;
+            height: 50px;
+            margin-left: 20px;
+            margin-top: 10px;
+            width: 540px;
+        }
+
+        .con_font {
+            color: #912515;
+            display: inline;
+            float: left;
+            font-size: 13px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 150px;
+            margin-top: 10px;
+            width: 250px;
+        }
+
+        .jy_div {
+            color: #000000;
+            float: left;
+            font-size: 14px;
+            height: 20px;
+            line-height: 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 540px;
+        }
+
+        .brower_con {
+            float: left;
+            height: 50px;
+            margin-left: 20px;
+            margin-top: 10px;
+            width: 540px;
+        }
+
+        .chrome {
+            float: left;
+            height: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 160px;
+        }
+
+        .chrome_img {
+            background: url("http://www.workingim.com/assest/images/ico_newbrowser.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+            float: left;
+            height: 26px;
+            margin-left: 5px;
+            width: 24px;
+        }
+
+        .firefox_img {
+            background: url("http://www.workingim.com/assest/images/ico_newbrowser.png") repeat scroll 0 -28px rgba(0, 0, 0, 0);
+            float: left;
+            height: 26px;
+            margin-left: 5px;
+            width: 24px;
+        }
+
+        .ie8_img {
+            background: url("http://www.workingim.com/assest/images/ico_newbrowser.png") repeat scroll 0 -56px rgba(0, 0, 0, 0);
+            float: left;
+            height: 26px;
+            margin-left: 5px;
+            width: 24px;
+        }
+
+        .chrome_font {
+            display: inline;
+            float: left;
+            height: 26px;
+            line-height: 26px;
+            margin-left: 5px;
+            width: auto;
+        }
+
+        .close_div {
+            border: 1px solid #000000;
+            cursor: pointer;
+            display: inline;
+            float: left;
+            height: 20px;
+            line-height: 20px;
+            margin-left: 220px;
+            margin-top: 20px;
+            text-align: center;
+            width: 40px;
+        }
+
+        .close_div:hover {
+        }
+    </style>
+   <script type="text/javascript">
+        var isIE=!!window.ActiveXObject;
+        var isIE6=isIE&&!window.XMLHttpRequest;
+        if (isIE){
+            if (isIE6){
+                $("#ie6_div").show();
+            }
+        }
+   </script>
+</head>
+<body>
+<div class="ie6_div" id="ie6_div">
+    <div class="ie6_btn" temp="ie6_div"></div>
+    <div class="ie6_main">
+        <div class="ie6_head">
+            <div class="ie6_font">请将浏览器进行升级至最新版</div>
+        </div>
+        <div class="ie_con">
+            <div class="con_font">您使用的浏览器并非推荐使用的浏览器。</div>
+        </div>
+        <div class="jy_div">为了获得更好的浏览体验，建议使用各浏览器的最新版(免费下载)。</div>
+        <div class="brower_con">
+            <div class="chrome">
+                <div class="chrome_img"></div>
+                <div class="chrome_font"><a href="http://www.google.com/chrome/?hl=zh-CN" target="_blank">Google
+                    Chrome</a></div>
+            </div>
+
+            <div class="chrome">
+                <div class="ie8_img"></div>
+                <div class="chrome_font"><a href="http://windows.microsoft.com/zh-CN/internet-explorer/downloads/ie"
+                                            target="_blank">Internet Explorer</a></div>
+            </div>
+
+            <div class="chrome">
+                <div class="firefox_img"></div>
+                <div class="chrome_font"><a href="http://www.mozilla.org/zh-CN/firefox/" target="_blank">Firefox</a>
+                </div>
+            </div>
+
+            <div class="close_div">关闭</div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
