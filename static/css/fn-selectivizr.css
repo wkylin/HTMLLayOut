@@ -1,4 +1,10 @@
 .fn-selectivizr{
     margin:0;
     padding:0;
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    text-align:center;
+    background-color:#e27839;
+
 }
