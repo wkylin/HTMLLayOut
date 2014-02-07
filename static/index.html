@@ -50,9 +50,16 @@
         您的浏览器不支持或已经禁止网页脚本。<a target="_blank" href="#" title="了解网页脚本限制的更多信息">如何解除脚本限制？</a>
     </div>
 </noscript>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!--<script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>-->
 <script type="text/javascript">
-    window.jQuery || document.write('<script type="text/javascript" src="static/js/jquery-1.8.3.min.js"><\/script>');
+    window.jQuery || document.write('<script type="text/javascript" src="js/jquery-1.8.3.min.js"><\/script>');
 </script>
 <script type="text/javascript" src="http://wkylin.github.com/assets/js/notOpenJsAndCookie.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        alert("jQuery");
+    });
+</script>
 </body>
 </html>
