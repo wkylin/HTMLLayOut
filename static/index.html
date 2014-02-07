@@ -40,13 +40,12 @@
     <script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
 
     <!-- 统一各浏览器下的CSS3语法，并为IE6-8提供部分CSS3功能。 -->
-    <script type="text/javascript" src="http://jquerycss3.googlecode.com/svn/trunk/jquery.css3.js"></script>
-
-    <!-- CSS3 selectors for IE -->
-    <!--[if (gte IE 6)&(lte IE 8)]>
-    <script type="text/javascript" src="http://wkylin.github.com/assets/js/selectivizr-min.js"></script>
-    <noscript><link rel="stylesheet" href="fn-selectivizr.css" /></noscript>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://code.google.com/p/jquerycss3/source/browse/jquery.css3.ie.js"></script>
     <![endif]-->
+    <!-- CSS3 selectors for IE -->
+    <script type="text/javascript" src="http://wkylin.github.com/assets/js/selectivizr-min.js"></script>
+    <noscript><link rel="stylesheet" href="css/fn-selectivizr.css" /></noscript>
 
 </head>
 <body>
@@ -72,7 +71,9 @@
         您的浏览器不支持或已经禁止网页脚本。<a target="_blank" href="#" title="了解网页脚本限制的更多信息">如何解除脚本限制？</a>
     </div>
 </noscript>
-
+<div class="fn-selectivizr">
+    selectivizr
+</div>
 <script type="text/javascript" src="http://wkylin.github.com/assets/js/notOpenJsAndCookie.js"></script>
 <script type="text/javascript">
     $(window).load(function() {
