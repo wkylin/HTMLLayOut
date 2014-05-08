@@ -45,3 +45,8 @@ https://securitycenter.alipay.com/sc/partner/browser.htm
             您的浏览器不支持或已经禁止网页脚本。<a target="_blank" href="#" title="了解网页脚本限制的更多信息">如何解除脚本限制？</a>
         </div>
     </noscript>
+
+###baidu
+
+http://i.baidu.com/static/ieup/index.html
+http://liulanqi.baidu.com/
