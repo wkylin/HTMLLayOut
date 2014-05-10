@@ -1,5 +1,3 @@
-
-
 ###升级浏览器
 
     <!--[if lt IE 7]>
@@ -49,4 +47,9 @@ https://securitycenter.alipay.com/sc/partner/browser.htm
 ###baidu
 
 http://i.baidu.com/static/ieup/index.html
+
 http://liulanqi.baidu.com/
+
+###环球网
+
+http://www.huanqiu.com/addhomelist/index.html
